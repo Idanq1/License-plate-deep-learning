@@ -1,0 +1,26 @@
+<annotation>
+	<folder>images</folder>
+	<filename>a.jpg</filename>
+	<path>C:\Users\97252\Desktop\Coding\License plate deep learning\Dataset\images\a.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>900</width>
+		<height>600</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>licence</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>389</xmin>
+			<ymin>435</ymin>
+			<xmax>551</xmax>
+			<ymax>471</ymax>
+		</bndbox>
+	</object>
+</annotation>

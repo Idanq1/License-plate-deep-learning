@@ -1,0 +1,26 @@
+<annotation>
+	<folder>images</folder>
+	<filename>sportage2014-e1398669030931.jpg</filename>
+	<path>C:\Users\97252\Desktop\Coding\License plate deep learning\Dataset\images\sportage2014-e1398669030931.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>593</width>
+		<height>334</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>licence</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>152</xmin>
+			<ymin>200</ymin>
+			<xmax>252</xmax>
+			<ymax>231</ymax>
+		</bndbox>
+	</object>
+</annotation>

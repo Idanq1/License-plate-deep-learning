@@ -1,0 +1,26 @@
+<annotation>
+	<folder>images</folder>
+	<filename>diw.jpg</filename>
+	<path>C:\Users\97252\Desktop\Coding\License plate deep learning\Dataset\images\diw.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>299</width>
+		<height>168</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>licence</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>206</xmin>
+			<ymin>102</ymin>
+			<xmax>246</xmax>
+			<ymax>114</ymax>
+		</bndbox>
+	</object>
+</annotation>

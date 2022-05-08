@@ -1,0 +1,26 @@
+<annotation>
+	<folder>images</folder>
+	<filename>eyal.jpg</filename>
+	<path>C:\Users\97252\Desktop\Coding\License plate deep learning\Dataset\images\eyal.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>610</width>
+		<height>405</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>licence</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>130</xmin>
+			<ymin>257</ymin>
+			<xmax>238</xmax>
+			<ymax>293</ymax>
+		</bndbox>
+	</object>
+</annotation>

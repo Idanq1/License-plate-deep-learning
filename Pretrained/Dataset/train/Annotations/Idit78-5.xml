@@ -1,0 +1,26 @@
+<annotation>
+	<folder>testing</folder>
+	<filename>Idit78-5.jpg</filename>
+	<path>C:\Users\97252\Desktop\Coding\License plate deep learning\testing\Idit78-5.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>550</width>
+		<height>413</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>licence</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>118</xmin>
+			<ymin>256</ymin>
+			<xmax>275</xmax>
+			<ymax>296</ymax>
+		</bndbox>
+	</object>
+</annotation>
