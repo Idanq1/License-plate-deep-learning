@@ -60,8 +60,8 @@ def xml_to_csv(path):
 
 
 def main():
-    input_dir = r"Dataset\train\Annotations"
-    output_file = r"Dataset\train.csv"
+    input_dir = r"Dataset\test\Annotations"
+    output_file = r"Dataset\test.csv"
     labelmap = r"Dataset"
 
     os.makedirs(os.path.dirname(output_file), exist_ok=True)

@@ -2,10 +2,10 @@
 Usage:
 
 # Create train data:
-python generate_tfrecord.py --label=<LABEL> --csv_input=<PATH_TO_ANNOTATIONS_FOLDER>/train_labels.csv  --output_path=<PATH_TO_ANNOTATIONS_FOLDER>/train.record <PATH_TO_ANNOTATIONS_FOLDER>/label_map.pbtxt
+python generate_tfrecord.py --csv_input=Dataset\train.csv --output_path=Dataset\train.record --img_path=Dataset\train\Images --label_map Dataset\label_map.pbtxt
 
 # Create test data:
-python generate_tfrecord.py --label=<LABEL> --csv_input=<PATH_TO_ANNOTATIONS_FOLDER>/test_labels.csv  --output_path=<PATH_TO_ANNOTATIONS_FOLDER>/test.record  --label_map <PATH_TO_ANNOTATIONS_FOLDER>/label_map.pbtxt
+python generate_tfrecord.py --csv_input=Dataset\test.csv --output_path=Dataset\test.record --img_path=Dataset\test\Images --label_map Dataset\label_map.pbtxt
 """
 
 from __future__ import division
