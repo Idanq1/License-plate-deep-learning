@@ -1,0 +1,26 @@
+<annotation>
+	<folder>images</folder>
+	<filename>gac.jpg</filename>
+	<path>C:\Users\97252\Desktop\Coding\License plate deep learning\Dataset\images\gac.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>871</width>
+		<height>550</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>licence</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>148</xmin>
+			<ymin>408</ymin>
+			<xmax>227</xmax>
+			<ymax>446</ymax>
+		</bndbox>
+	</object>
+</annotation>

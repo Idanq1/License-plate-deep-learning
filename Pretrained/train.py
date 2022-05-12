@@ -23,6 +23,6 @@ def update_pipeline(config_path):
         f.write(config_text)
 
 
-# update_pipeline(r"ssd_mobilenet\\pipeline.config")
+update_pipeline(r"ssd_mobilenet\\pipeline.config")
 
 # python model\models\research\object_detection\model_main_tf2.py --model_dir=ssd_mobilenet --pipeline_cofig_path=ssd_mobilenet\pipeline.config --num_train_steps=5000
