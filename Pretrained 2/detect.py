@@ -32,7 +32,7 @@ def load_image_into_numpy_array(path):
 
 
 images = os.listdir(r"Dataset\test\Images")
-images = ["white.jpg"]
+images = ["Clipboard02.jpg"]
 
 for image in images:
     image_path = r"Dataset\test\Images"
