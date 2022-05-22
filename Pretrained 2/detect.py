@@ -1,18 +1,15 @@
-import os
-import sys
-import numpy as np
-from PIL import Image
+from object_detection.utils import visualization_utils as viz_utils
+from object_detection.utils import label_map_util
 import matplotlib.pyplot as plt
 import tensorflow as tf
-from object_detection.utils import label_map_util
-from object_detection.utils import visualization_utils as viz_utils
-import cv2
+from PIL import Image
+import numpy as np
 import warnings
+import time
+import cv2
+import os
+
 warnings.filterwarnings('ignore')   # Suppress Matplotlib warnings
-
-
-# image_path = r"Dataset\test\Images\testy.jpg"
-image_path = r"_PAZ5328JPG.jpg"
 
 
 def load_image_into_numpy_array(path):
@@ -28,32 +25,26 @@ def load_image_into_numpy_array(path):
     Returns:
       uint8 numpy array with shape (img_height, img_width, 3)
     """
-    return np.array(Image.open(path))
+    img = cv2.imread(path)
+    img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+    return np.array(img)
 
 
 images = os.listdir(r"Dataset\test\Images")
-images = ["Clipboard02.jpg"]
+detect_fn = tf.saved_model.load(r"output\saved_model")
+image_path = r"Dataset\test\Images"
+category_index = label_map_util.create_category_index_from_labelmap(r"Dataset\label_map.pbtxt", use_display_name=True)
+
+s = time.time()
 
 for image in images:
-    image_path = r"Dataset\test\Images"
-    detect_fn = tf.saved_model.load(r"output\saved_model")
-    category_index = label_map_util.create_category_index_from_labelmap(r"Dataset\label_map.pbtxt", use_display_name=True)
-
-    print('Running inference for {}... '.format(image), end='')
+    print(f'Running inference for {image}... ')
     image_np = load_image_into_numpy_array(f"{image_path}\\{image}")
 
-    # Things to try:
-    # Flip horizontally
-    # image_np = np.fliplr(image_np).copy()
-    # Convert image to grayscale
-    # image_np = np.tile(
-    #     np.mean(image_np, 2, keepdims=True), (1, 1, 3)).astype(np.uint8)
-    # The input needs to be a tensor, convert it using `tf.convert_to_tensor`.
     input_tensor = tf.convert_to_tensor(image_np)
-    # The model expects a batch of images, so add an axis with `tf.newaxis`.
     input_tensor = input_tensor[tf.newaxis, ...]
-    # input_tensor = np.expand_dims(image_np, 0)
     detections = detect_fn(input_tensor)
+
     # All outputs are batches tensors.
     # Convert to numpy arrays, and take index [0] to remove the batch dimension.
     # We're only interested in the first num_detections.
@@ -74,12 +65,13 @@ for image in images:
           max_boxes_to_draw=200,
           min_score_thresh=.30,
           agnostic_mode=False)
-    plt.figure()
-    plt.imshow(image_np_with_detections)
-    print('Done')
-    plt.show()
-    plt.savefig(f"Results\\{image}")
-    # cv2.imshow("output", image_np_with_detections)
-    # cv2.waitKey(0)
-
+    # plt.figure()
+    # plt.imshow(image_np_with_detections)
+    # print('Done')
+    # plt.show()
+    # plt.savefig(f"Results\\{image}")
+    output_img = cv2.cvtColor(image_np_with_detections, cv2.COLOR_RGB2BGR)
+    cv2.imshow("output", output_img)
+    cv2.waitKey(0)
+print(time.time() - s)
 # sphinx_gallery_thumbnail_number = 2
