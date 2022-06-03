@@ -47,6 +47,8 @@ def main():
     out = cv2.VideoWriter(output_path, cv2.VideoWriter_fourcc('M', 'J', 'P', 'G'), 20, (frame_width, frame_height))
     i = 0
     while cap.isOpened():
+        if i == 3000:
+            break
         ret, frame = cap.read()
         if ret:
             print(f"{i}\\{frames}")
@@ -64,6 +66,6 @@ def main():
 
 
 if __name__ == '__main__':
-    detect_fn = tf.saved_model.load(r"output\saved_model")
+    detect_fn = tf.saved_model.load(r"output2\saved_model")
     category_index = label_map_util.create_category_index_from_labelmap(r"Dataset\label_map.pbtxt", use_display_name=True)
     main()

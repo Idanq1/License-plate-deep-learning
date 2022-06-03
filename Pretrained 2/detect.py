@@ -31,7 +31,7 @@ def load_image_into_numpy_array(path):
 
 
 images = os.listdir(r"Dataset\test\Images")
-detect_fn = tf.saved_model.load(r"output\saved_model")
+detect_fn = tf.saved_model.load(r"output2\saved_model")
 image_path = r"Dataset\test\Images"
 category_index = label_map_util.create_category_index_from_labelmap(r"Dataset\label_map.pbtxt", use_display_name=True)
 
