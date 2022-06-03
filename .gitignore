@@ -8,3 +8,6 @@ Pretrained 2/Dataset/Video/Raanana.webm
 Pretrained 2/Dataset/train.record
 Pretrained 2/Dataset/test.record
 *.record
+Pretrained 2/models/
+Pretrained/model/models
+Pretrained/model/models
