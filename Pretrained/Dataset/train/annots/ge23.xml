@@ -1,0 +1,26 @@
+<annotation>
+	<folder>images</folder>
+	<filename>ge23.jpg</filename>
+	<path>C:\Users\97252\Desktop\Coding\License plate deep learning\Dataset\images\ge23.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>650</width>
+		<height>330</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>licence</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>115</xmin>
+			<ymin>188</ymin>
+			<xmax>195</xmax>
+			<ymax>215</ymax>
+		</bndbox>
+	</object>
+</annotation>

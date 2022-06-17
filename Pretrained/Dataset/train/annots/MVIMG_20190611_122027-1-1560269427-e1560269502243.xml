@@ -1,0 +1,26 @@
+<annotation>
+	<folder>images</folder>
+	<filename>MVIMG_20190611_122027-1-1560269427-e1560269502243.jpg</filename>
+	<path>C:\Users\97252\Desktop\Coding\License plate deep learning\Dataset\images\MVIMG_20190611_122027-1-1560269427-e1560269502243.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>4032</width>
+		<height>3024</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>licence</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1172</xmin>
+			<ymin>866</ymin>
+			<xmax>2239</xmax>
+			<ymax>1311</ymax>
+		</bndbox>
+	</object>
+</annotation>

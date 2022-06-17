@@ -1,0 +1,38 @@
+<annotation>
+	<folder>Images_from_video</folder>
+	<filename>Image98.png</filename>
+	<path>E:\Coding\License-plate-deep-learning\Pretrained 2\Dataset\Images_from_video\Image98.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>3840</width>
+		<height>2160</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>licence</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>953</xmin>
+			<ymin>1687</ymin>
+			<xmax>1098</xmax>
+			<ymax>1721</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>licence</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>2293</xmin>
+			<ymin>1652</ymin>
+			<xmax>2336</xmax>
+			<ymax>1674</ymax>
+		</bndbox>
+	</object>
+</annotation>

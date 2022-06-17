@@ -1,0 +1,26 @@
+<annotation>
+	<folder>images</folder>
+	<filename>WhatsApp Image 2019-01-29 at 13.39.25 (1).jpeg</filename>
+	<path>C:\Users\97252\Desktop\Coding\License plate deep learning\Dataset\images\WhatsApp Image 2019-01-29 at 13.39.25 (1).jpeg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>600</width>
+		<height>400</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>licence</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>109</xmin>
+			<ymin>210</ymin>
+			<xmax>173</xmax>
+			<ymax>257</ymax>
+		</bndbox>
+	</object>
+</annotation>
