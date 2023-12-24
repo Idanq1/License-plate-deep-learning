@@ -34,6 +34,7 @@ def xml_to_csv(path):
                 print(xml_file)
 
             classes_names.append(member[0].text)
+            print(xml_file)
             value = (
                 root.find("filename").text,
                 int(root.find("size")[0].text),
@@ -62,9 +63,9 @@ def xml_to_csv(path):
 
 
 def main():
-    input_dir = r"..\Dataset\train\annots"
-    output_file = r"..\Dataset\train.csv"
-    labelmap = r"..\Dataset"
+    input_dir = r"custom data\images\Train annots"
+    output_file = r"custom data\images\train.csv"
+    labelmap = r"custom data"
 
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
     xml_df, classes_names = xml_to_csv(input_dir)
@@ -72,7 +73,7 @@ def main():
     print("Successfully converted xml to csv.")
     if labelmap:
         os.makedirs(labelmap, exist_ok=True)
-        label_map_path = os.path.join(labelmap, "label_map.pbtxt")
+        label_map_path = os.path.join(labelmap, "label_map.txt")
         print("Generate `{}`".format(label_map_path))
 
         # Create the `label_map.pbtxt` file
